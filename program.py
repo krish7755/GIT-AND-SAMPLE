@@ -41,3 +41,4 @@ if is_palindrome(string):
 else:
     print(f'"{string}" is not a palindrome.')
 
+Hello world
