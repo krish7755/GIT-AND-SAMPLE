@@ -29,3 +29,15 @@ try:
     print(f"Factorial of {num} is {factorial(num)}.")
 except ValueError:
     print("Invalid input! Please enter an integer.")
+
+# Program to check if a string is a palindrome
+def is_palindrome(s):
+    s = s.lower().replace(" ", "")  # Convert to lowercase and remove spaces
+    return s == s[::-1]
+
+string = input("Enter a string: ")
+if is_palindrome(string):
+    print(f'"{string}" is a palindrome.')
+else:
+    print(f'"{string}" is not a palindrome.')
+
