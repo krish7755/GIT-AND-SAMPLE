@@ -41,4 +41,18 @@ if is_palindrome(string):
 else:
     print(f'"{string}" is not a palindrome.')
 
-Hello world
+# code updated
+
+import os
+
+
+  def create_python_script(filename):
+      comments = "# Start of a new Python program"
+      with open(filename, "w") as file:
+          file.write(comments)
+
+      filesize = os.path.getsize(filename)
+      return(filesize)
+
+
+  print(create_python_script("program.py"))
